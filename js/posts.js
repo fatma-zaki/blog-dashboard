@@ -3,7 +3,7 @@ import { fetchAllPosts } from './api.js';
 
 const container = document.getElementById('allPosts');
 
-(async function showAllPosts() {
+async function showAllPosts() {
   const posts = await fetchAllPosts();
   posts.slice(0, 20).forEach(post => {
     container.innerHTML += `
@@ -15,4 +15,4 @@ const container = document.getElementById('allPosts');
       </div>
     `;
   });
-})();
+} showAllPosts();

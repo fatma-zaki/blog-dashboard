@@ -16,3 +16,4 @@ form.addEventListener('submit', async (e) => {
     errorMsg.textContent = 'User not found. Try another username.';
   }
 });
+
